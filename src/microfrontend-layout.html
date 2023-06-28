@@ -1,4 +1,4 @@
-<single-spa-router>
+<single-spa-router mode="hash">
   <!--
 
     This is the single-spa Layout Definition for your microfrontends.
@@ -17,22 +17,17 @@
 
   -->
 
-  <nav>
-    <ul>
-      <li>
-        <a href="/#/">App 1</a>
-      </li>
-      <li>
-        <a href="/#/app2">App 2</a>
-      </li>
-    </ul>
-  </nav>
-
+  <p>
+    <a href="/#/">App 1</a>
+    <br />
+    <a href="/#/second">App 2</a>
+  </p>
+  
   <main>
     <route default>
       <application name="@microfe/mfe-first-app"></application>
     </route>
-    <route path="app2">
+    <route path="second">
       <application name="@microfe/mfe-second-app"></application>
     </route>
   </main>
